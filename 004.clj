@@ -3,7 +3,9 @@
 ; Find the largest palindrome made from the product of two 3-digit numbers.
 
 (defn palindrome? [n]
-  (=(clojure.string/reverse (str n)) (str n)))
+  (=
+    (clojure.string/reverse (str n))
+    (str n)))
 
 (println
   (apply max
